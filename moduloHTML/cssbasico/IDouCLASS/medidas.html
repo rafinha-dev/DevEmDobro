@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            background-color: rgb(114, 70, 70);
+            font: 32px;
+        }
+ 
+        body{
+            background-color: blue;
+            width: 50%;
+            font-size: 3em;
+           
+            /* unidade vale 16px */
+        }
+        .pai{
+            background-color: #ea80fc;
+            width: 50%;
+            font-size: 1.5em;
+            /* vai pegar como referencia o tamanho da letra do objeto pai de não do root */
+        }
+        .filha{
+            background-color: #1de9b6;
+            width: 50%;
+        }
+        /* a porcentagem é relativa ao tamnho do objeto pai */
+    </style>
+</head>
+<body>
+    <h1> Unidades de medida relativa</h1>
+
+    <div class="pai">
+        pai
+        <div class="filha">
+            filha
+        </div>
+    </div>
+</body>
+</html>
