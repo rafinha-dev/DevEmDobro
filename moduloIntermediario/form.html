@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+
+    <form action="GET" acttion="index.html">
+        <input type="text" nome="q">
+        <input type="submit" value="Enviar">
+        <!-- o valor do imput submit sempre vai ser o do value -->
+
+    </form>
+
+    <h3>Formulário de login no facebook </h3>
+    <form action="form.html" method="get" enctype="multipart/form-data">
+        <input type="text" nome="nome" id="nome">
+        <input type="text" name="sobrenome" id="sobrenome"><br>
+        <input type="text" nome="celular-ou-email" id="celular-ou-email"  placeholder="Celular ou email">
+        <input type="password" nome="senha" id="senha" placeholder="nova senha">
+    </form>
+
+    <select name="dia" id="">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+
+    <select name="dia" id="">
+        <option value="jan">jan</option>
+        <option value="fev">fev</option>
+        <option value="mar">mar</option>
+        <option value="abril">abril</option>
+        <option value="mai">mai</option>
+    </select>
+
+    <select name="ano" id="">
+    <option value="1999">1999</option>
+    <option value="2000">2000</option>
+    <option value="2001">20001</option>
+    <option value="2002">2002</option>
+    <option value="2003">2003</option>
+    </select>
+
+    <h2>genero</h2>
+    <label for="feminino">feminino</label>
+    <input type="radio" nome="genero" id="feminino" value="feminino" checked>
+    <br>
+    <label for="masculino">Masculino</label>
+    <input type="radio" nome="genero" id="masculino" value="masculino">
+    <br>
+    <label for="personalizado">personalizado</label>
+    <input type="radio" nome="genero" id="personalizado" value="personalizado">
+
+    <input type="file" name="" id="">
+    <br>
+    <br>
+    <input type="submit" value="enviar">
+</body>
+</html>
