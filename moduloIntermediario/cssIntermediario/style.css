@@ -1,0 +1,7 @@
+.container{
+    background-color: red;
+}
+.container{
+    background-color: blue;
+}
+/* observe que a cascata linear prevalece o que tem em baixo */
