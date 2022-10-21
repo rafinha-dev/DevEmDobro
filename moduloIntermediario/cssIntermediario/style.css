@@ -1,7 +1,68 @@
-.container{
-    background-color: red;
+
+/* TEXT ALIGNE */
+.alinhado-esqueda{
+    text-align: left;
 }
-.container{
-    background-color: blue;
+.alinhado-direita{
+    text-align: right;
 }
-/* observe que a cascata linear prevalece o que tem em baixo */
+.alinhado-centro{
+    text-align: center;
+}
+/* 00000000000000000 */
+
+.fundo-alinhamento{
+    padding: 20px;
+    background-color: #D1C4E9;
+}
+.fundo-transform{
+    padding: 20px;
+    background-color: #C8E6C9;
+}
+.fundo-decoration{
+    padding: 20px;
+    background-color: #FFF9C4;
+}
+.fundo{
+    padding: 20px;
+    background-color: #CCC;
+}
+html{
+    font-size: 24px;
+}
+
+/* text transform */
+.maiuscula {
+    text-transform: uppercase;
+}
+.minuscula {
+    text-transform: lowercase;
+}
+.capitalizando{
+    text-transform: capitalize;
+}
+
+/* text decoration  */
+
+.sublinhado {
+    text-decoration: underline;
+
+}
+.linha-sobreposta{
+    text-decoration: line-through;
+}
+.sem-text-decoration{
+    text-decoration: none;
+}
+
+/*  letter spacing  */
+
+.altura-entre-linhas{
+    line-height: 40px;
+}
+
+/* sombra no texto */
+
+.sombra-de-texto{
+    text-shadow: 10px 10px 1px #808080;
+}

@@ -1,0 +1,25 @@
+/* .container{
+    background-color: red;
+}
+.container{
+    background-color: blue;
+} */
+/* observe que a cascata linear prevalece o que tem em baixo */
+
+/* Especificidade */
+
+
+.container p{
+    background-color:gray ;
+}
+
+p{
+    background-color: lightblue;
+}
+
+/* Aqui se refere a quanto especifico algo é, só é possível ter 1 id por pagina, então não tem nada mais específico */
+
+.container {
+    background-color: violet !important;
+}
+/* o important da um peso extra que faz com que fique muito mais específico. */
