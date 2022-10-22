@@ -1,0 +1,43 @@
+*{
+    margin:0;
+}
+
+.elemento{
+    color: #fff;
+    font-size: 32px;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    margin-bottom: center;
+    margin-bottom: 20px;
+}
+.elemento-estatico{
+    position: static;
+    background-color: crimson;
+    /* redundante , o padrão é static */
+}
+.elemento-relativo{
+    position: relative;
+    left: 100px;
+    background-color: coral;
+    /* relativo a ele mesmo */
+}
+.elemento-absoluto {
+    position: absolute;
+    background-color: darkcyan;
+    left: 200px;
+    /* absoluto dentro do seu elemento pai, até que encontre outro elemento absoluto ou relativo. */
+}
+.elemento-relativo-com-filho{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background-color: rgb(112, 201, 201);
+}
+.elemento-absoluto-com-pai{
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+    background-color: black;
+}
