@@ -1,0 +1,42 @@
+p::first-letter{
+    color:coral
+}
+.paragrafo::first-letter{
+    background-color: blue;
+}
+/* esse pseudo elemento não funciona para elementos do tipo inline */
+p::first-line{
+    background-color: orange;
+}
+
+li::marker{
+    color: red;
+    font-size: 23px;
+}
+/* Estiliza os elementos */
+h2::before{
+    content: url(https://picsum.photos/200);
+    /* inserindo elementos pelo css */
+    
+    
+
+}
+ul::before{
+    content: "teste 12"
+    /* Inserindo texto pelo css */
+}
+li::before{
+    content: "";
+    background: url(https://picsum.photos/75) center center no-repeat;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    /* o espaço vazio de conteúdo é assim por que o elemento inserico sera como um elemento de texo. é preciso que ele  tenha altura definida  */
+}
+li::after{
+    content: "";
+    background: url(https://picsum.photos/75) center center no-repeat;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+}
