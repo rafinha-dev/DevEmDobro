@@ -1,0 +1,48 @@
+/* seletor:pseudo-classe{
+    prpriedade: valor
+} */
+
+p:first-child{
+    color: aqua;
+}
+p:last-child{
+    color: violet;
+}
+
+/* É um valor de negação, tudo que não tiver a classe vai ficar daquela cor, repare que nessa pseudo classe é preciso declarar um parametro */
+p:not(.padrao){
+    color: yellow;
+}
+
+/* nessa pseudo classe é possível informar o número do objeto filho  */
+p:nth-child(1){
+
+}
+p:nth-child(odd){
+    color: red;
+}
+/* seleciona todos os elementos que são impares */
+
+p:nth-child(even){
+    color: rgb(0, 255, 42);
+}
+/* seleciona todos os elementos que são pares */
+
+p:nth-child(3n){
+    color: rgb(4, 0, 255);
+}
+/* Significa que eu vou estilizar todos os elementos de 3 em 3 dependendo do numero que eu colocar */
+
+p:nth-child(n+2):nth-child(-n+5){
+    color: rgb(234, 0, 255);
+}
+/* A estilização vai acontecer do segundo até o quinto  */
+
+li:nth-last-child(1){
+    color: gray;
+/* ele vai estilizar de baixo para cima, é o contrário do nth-child  paddao*/
+}
+p:only-child{
+    color: rgb(136, 127, 255);
+}
+/* usado para estilizar elementos que são únicos dentro de uma tag pai  */
