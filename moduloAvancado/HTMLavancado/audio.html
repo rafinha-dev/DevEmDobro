@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>audio</title>
+</head>
+<body>
+    <h1>Audio</h1>
+
+    <!-- no chrome não permite a execução de audio automatica , talvez outros navegadores também, precisa ser feita pelo js -->
+    <audio src="#" controls autoplay preload="metadata"></audio>
+    <!-- controls serve pra carregar a barrinha de play -->
+    <!-- o preload é para a pessoa não ficar baixando tudo na hora de abrir a página. -->
+
+    <audio src="">
+        <source src="./audio/audios/audio.ogg" type="audio/ogg">
+        <source src="./audio/audios/audio.mp3" type="audio/mpeg">
+        <source src="audio/audios/audio.wav" type="audio/wav">
+        <!-- caso não tenha suporte pode ter a mensagem -->
+        <p>Seu navegador não tem suporte a tag de audio</p>
+    </audio>
+</body>
+</html>
