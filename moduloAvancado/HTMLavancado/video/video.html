@@ -6,10 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>videos</title>
 </head>
-<body>
+<source>
     <h1>video</h1>
-    <video src="./videos/videos/video.mp4" width="200px" muted autoplay loop poster="./videos/images/thumb.jpg"></video>
+
+    
+    <video src="./videos/videos/video.mp4" width="200px" controls muted autoplay loop poster="./videos/images/thumb.jpg"></video>
     <!-- para exibir os controles, é necessário colocar o controls -->
     <!-- para que o video exiba automaticamente é preciso passar o parametro muted, ou mutado -->
+
+    <video controls width="300">
+        <source src="./videos/videos/video.mp4" type="video/mp4">
+        <!-- <source src="" type="video/ogg"> -->
+        <!-- posso usar o programa hand break para converter ou o site convertio.co/pt/ -->
+    </video>
 </body>
 </html>
