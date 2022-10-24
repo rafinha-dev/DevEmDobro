@@ -1,0 +1,15 @@
+img{ 
+    width: 200px;
+}
+
+img.stacle{
+    transform: scale(1.5, 1);
+}
+
+img.rotate{
+    transform: rotate(20deg);
+    /* se eu usar o eixo só no x ou no y ele vai achatar a imagem */
+}
+img.translate{
+    transform: translate(10%, 10%);
+}
