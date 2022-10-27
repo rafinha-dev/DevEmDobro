@@ -1,0 +1,18 @@
+/* variaveis não tem suporte no ópera mini ou no internet explorer */
+
+:root{
+    --cor-padrao: red;
+    --tamanho-de-fonte-padrao: 20px;
+}
+
+h2{ 
+
+
+    color: var(--cor-padrao, blue);
+    /* caso dê algum problema ele vai carregar a segunda variável. */
+}
+h3{
+    --cor-padrao: green;
+    color: var(--cor-padrao);
+    /* variáveis locais */
+}
