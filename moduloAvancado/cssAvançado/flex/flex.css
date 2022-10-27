@@ -1,0 +1,29 @@
+.container{
+    /* quando se faz isso todos eles permitem trabalhar com propriedades de flex itens, a principio parecem que ficaram inline-block */
+    display: flex;
+
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+}
+
+.container div{
+    color: white;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    margin: 10px;
+}
+.wrap{
+    flex-wrap: nowrap;
+    /* colocar nowrap é redundante, com o flex ativo ele coloca tudo na mesma linha, e vai esmagando o que tem dentro */
+    flex-wrap: wrap;
+    /*  aparentemente não faz nada, mas com ele os filhos são quebrados em várias linhas de cima pra baixo conforme seu tamanho */
+    flex-wrap: wrap-reverse;
+    /* agora quebra com os de baixo vindo por cima */
+
+    flex-flow: column wrap;
+    /* Aqui é só uma abreviação para não ter que usar direction e wrap*/
+}
