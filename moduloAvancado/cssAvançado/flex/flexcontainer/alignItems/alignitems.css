@@ -1,0 +1,27 @@
+.container{
+    height: 120px;
+}
+.flex-start{
+    align-items: flex-start
+    /* pode remover tamanhos pré definidos pois começa no flex start e é flex */
+}
+.flex-end{
+    align-items: flex-end
+}
+.flex-center{
+    align-items: center;
+}
+.flex-stretch{
+    align-items: stretch;
+    /* se estica para preencher toda a altura do container */
+}
+.baseline{
+    align-items: baseline;
+}
+.baseline .item{
+    flex: 1;
+}
+.baseline .item:first-child{
+    padding-top: 40px;
+    /* sempre ficam alinhados em relaçao a linha com outros elementos. */
+}

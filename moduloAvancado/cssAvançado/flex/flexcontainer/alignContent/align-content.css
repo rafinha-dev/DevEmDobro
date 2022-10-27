@@ -1,0 +1,36 @@
+.container{
+    height: 120px;
+    flex-wrap: wrap;
+}
+
+.flex-start .item, 
+.flex-end .item, 
+.center .item,
+.stretch .item{
+    flex: 1;
+}
+.flex-start{
+    align-content: flex-start;
+    /* alinha ao topo */
+}
+.flex-end{
+    align-items: flex-end;
+}
+.center{
+    align-items: center;
+}
+.stretch{
+    align-items: stretch;
+}
+.space-between{
+    align-content: space-between;
+    /* dispoe as linhas no inicio do container com espaço de um para o outro iguais, quando não tiver mais expaço vai exibir os próximos no fim do container. */
+}
+.space-arround{
+    align-content: space-around;
+    /* terá espaços iguais em cima e em baixo , no meio não */
+}
+.space-evenly{
+    align-content: space-evenly;
+    /* terá o espaço igual em cima no meio e embiaixo. */
+}
