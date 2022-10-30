@@ -1,0 +1,24 @@
+.flex-0{
+    flex: 0;
+    /* o flex abrevia 3 outras porpriedades */
+    /* flex-grow, se não informado vai ser 0
+        flex-shrink , se não informado será sempre 1
+        flex-basi , se não informado será sempre 0 */
+}
+.flex{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+.flex-1{
+    flex: 1;
+    /*  podendo também ser representado dessa forma :  */
+    flex: 1 1 0;
+    flex: 1 1 100px;
+    /*  é possivel colocar o basis com pixels também */
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
