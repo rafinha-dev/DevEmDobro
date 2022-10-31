@@ -1,0 +1,45 @@
+.grow-0{
+    flex-grow: 0;
+}
+.grow-1{ 
+    flex-grow: 1;
+}
+.grow-2{
+    flex-grow: 2;
+}
+.grow-3{
+    flex-grow: 3;
+}
+.basis-auto{
+    flex-basis: auto;
+}
+.basis-0{
+    flex-basis: 0;
+}
+.basis-100{
+    flex-basis: 100px;
+}
+.basis-200{
+    flex-basis: 200px;
+}
+.basis-300{
+    flex-basis: 300px;
+}
+/*  funciona setando uma min-width para os elementos com medida em pxels */
+.shrink-1{
+    flex-shrink: 1;
+}
+/* vai se adequar ao tamanho mas nunca vai sair da caixa */
+.shrink-0{ 
+    flex-shrink: 0;
+}
+.shrink .item{
+    width: 300px ;
+}
+/* vai forçar a largura dos elementos */
+.shrink-2 {
+    flex-shrink: 2;
+}
+.shrink-3 { 
+    flex-shrink: 3;
+}
