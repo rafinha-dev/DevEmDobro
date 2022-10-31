@@ -1,3 +1,29 @@
+
+.flex{ 
+    /* só com isso as colunas se ajustam o tamanho */
+    display: flex;
+
+    /*  para o responsivo */
+    width: 960px;
+    max-width: 100%;
+
+
+}
+
+.flex img {
+    max-width: 100%;
+}
 .coluna{
+    display: flex;
+    flex-direction: column;
+
     background-color: blue;
+    flex: 1;
+    margin: 1em;
+    width: 250px;
+}
+.botao{
+    color: red;
+   align-self: flex-start; 
+    
 }
