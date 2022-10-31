@@ -6,6 +6,7 @@
     /*  para o responsivo */
     width: 960px;
     max-width: 100%;
+    flex-wrap: wrap;
 
 
 }
@@ -18,12 +19,12 @@
     flex-direction: column;
 
     background-color: blue;
-    flex: 1;
     margin: 1em;
     width: 250px;
 }
 .botao{
     color: red;
    align-self: flex-start; 
+   margin-top: auto;
     
 }
