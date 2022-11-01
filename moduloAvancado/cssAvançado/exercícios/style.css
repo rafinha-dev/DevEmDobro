@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Public Sans', sans-serif;
+}
+
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    /* por que colocar flex no container não faz com que seus elementos filhos fiquem flex dentro deles ? */
+}
+.logo{
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    transform: translateY(-25%);
+
+    /* flex-wrap: wrap; se eu colocar essa propriedade aqui dentro ela só age aqui */
+
+    
+}
+.logo a{
+    font-size: 20px;
+    line-height: 24px;
+    /* margin-top: 55px; */
+    /* está surgindo um problema que se eu coloco margin em um único elemento ele sai do eixo principal deixando-o desalinhado,
+    mas no figma tem a altura exata da distancia do texto para o topo, como alinhar todos nessa altura ? 
+*/
+/* pensando em flexbox- seria melhor ter o espaço setado manualmente ou só passado um space arround  deixando os espaços flexiveis e metendo um tamanho no container , ou também não precisaria ? */
+} 
+.links-principais{
+    display: flex;
+    font-size: 15px;
+    font-weight: 400;
+    /* flex-shrink: 1; nao funcionou */
+}
+.links-principais .links{
+    display: inline-block;
+    margin: 0px 18px 0px 0px;
+    padding: 10px 6px 10px 6px  ;
+    transform: translateY(-25%);
+}
+.links-principais .links:hover, 
+.links-principais .links:focus
+{
+    background-color: #5bc241;
+    color: white;
+    transition: 0.3s;
+    outline: unset;    
+}
+
+.links-principais .links:last-child {
+    /* display: flex; */
+    /* por que tive que redeclarar ? */
+    background-color: #5bc241;
+    width: 127px;
+    padding: 10px 20px;
+    /* margin-left: 50px; */
+    margin:  0 60px 0 0;
+    /* transform: translateY(-25%); */
+    border-radius: 10px;
+    color: white;
+
+}
+@media(max-width: 480px){
+    
+    .head{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .links-principais{
+        margin-top: 90px;
+        flex-direction: column;
+        
+        /* justify-content: center; */
+    }
+
+    .links-principais .links{
+        text-align: center;
+        margin: 0;
+        padding: 17px 40px ;
+        margin: 8px 0px;
+    }
+    .links-principais .links:last-child {
+        font-size: 18px;
+        width: 150px;
+        margin: 0;
+        /* justify-content: center; */
+        transform: translateX(30%);
+    }
+    .logo{
+        justify-content: center;
+    }
+    .logo a, .links-principais{
+        font-size: 40px;
+    } 
+    }
