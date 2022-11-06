@@ -21,6 +21,7 @@ a{
     /* por que colocar flex no container não faz com que seus elementos filhos fiquem flex dentro deles ? */
 }
 .logo{
+    margin: 45px;
     font-weight: 800;
     display: flex;
     align-items: center;
@@ -32,12 +33,10 @@ a{
 }
 .logo a{
     font-size: 20px;
-    line-height: 24px;
     /* margin-top: 55px; */
     /* está surgindo um problema que se eu coloco margin em um único elemento ele sai do eixo principal deixando-o desalinhado,
     mas no figma tem a altura exata da distancia do texto para o topo, como alinhar todos nessa altura ? 
 */
-/* pensando em flexbox- seria melhor ter o espaço setado manualmente ou só passado um space arround  deixando os espaços flexiveis e metendo um tamanho no container , ou também não precisaria ? */
 } 
 .links-principais{
     display: flex;
