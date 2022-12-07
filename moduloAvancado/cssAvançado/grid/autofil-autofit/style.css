@@ -8,7 +8,8 @@ body{
     padding: 3em;
     gap: 2em;
 
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* auto fill cria colunas adicionas até o limite maximo, se ja o auto-fit vai esticando as caixas até ocupar tudo. */
 }
 
 .container p{
