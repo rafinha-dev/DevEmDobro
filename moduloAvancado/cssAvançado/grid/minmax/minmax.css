@@ -1,3 +1,6 @@
+body{
+    background-color: red;
+}
 .container > div{
     border: 1px solid black;
     background-color: #8a2ba2;
@@ -10,4 +13,17 @@
     /* 2 a segunda e a terceita (repeat) com minimo de 100 e maximo de 300,  */
     /* quarta coluna com auto  */
     grid-template-columns: minmax(100px, 800px) repeat(2, minmax(100px,300px)) minmax(auto, auto);
+
+    grid-template-rows: repeat(2, minmax(200px, 300px));
+    /* por que row com minmax em px não funciona ? */
+    grid-template-rows: repeat(2, minmax(20%, 30%));
+    /* aqui ele também só pega o tamanho mínimo */
+    grid-template-rows: repeat(2, minmax(5rem, 8rem));
+    /* rem o mesmo problema  */
+
+    /* unidades de medidas relativas */
+    grid-template-rows: repeat(2,minmax(20vh, 30vh));
+
+    grid-template-rows: repeat(2, minmax(20vmin, 40vmin));
+
 }
