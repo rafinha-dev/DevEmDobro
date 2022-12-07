@@ -20,7 +20,10 @@
 
 .container{
     display: grid;
-    grid-template-areas:  
+    grid-template-areas: 
+    "cabecalho cabecalho cabecalho cabecalho"
+    "menu secao-principal  . aside" 
+    "rodape rodape rodape .";
 }
 .cabecalho{
     grid-area: cabecalho ;
