@@ -7,6 +7,7 @@
 
 .container{
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 50px 80px 50px;
+    grid-template-columns: repeat(2, auto);
+    /* grid-template-rows: 50px 80px 50px; */
+    grid-template-rows: repeat(2, 50px);
 }
