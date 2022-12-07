@@ -12,4 +12,6 @@
     /* grid-template-rows: repeat(2, 50px); */
 
     grid-template: repeat(1, 150px) / auto auto ;
+
+    grid-gap: 10px 1px;
 }
